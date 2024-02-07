@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Cash (SCSX)</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Seu arquivo CSS -->
+</head>
+<body>
+<header>
+    <div class="container container-mobile">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/scashcoin/images/master/SCSX_LOGO_OFFICIAL_200x200.png" alt="Secure Cash Logo">
+            <h3>Secure Cash (SCSX)</h3>
+        </div>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>
+      <a href="#">Introduction</a>
+      <ul class="dropdown">
+        <li><a href="how-work.html">How its work</a></li>
+        <li><a href="about-securecash.html">About Secure Cash</a></li>
+        <li><a href="https://github.com/scashcoin/whitepaper/blob/main/whitepaper-scsx.pdf">White paper</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Resources</a>
+      <ul class="dropdown">
+        <li><a href="choosewallet.html">Wallets</a></li>
+        <li><a href="buysecurecash.html">Exchanges</a></li>
+        <li><a href="miningpools.html">Mining Pools</a></li>
+        <li><a href="webminer.html">Web Miner</a></li>
+        <li><a href="http://explorer.scsx.org">Explorer</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+      </ul>
+    </li>
+    <li><a href="community.html">Community</a></li>
+  </ul>
+</nav>
+        <div class="social-icons">
+            <a href="https://twitter.com/securecash_scsx"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968958.png" alt="x"></a>
+            <a href="https://t.me/scash_scsx"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"></a>
+            <a href="https://github.com/scashcoin"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+            <a href="https://discord.gg/jcFR7Yt"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord"></a>
+        </div>
+        <a href="getting-started.html" class="get-started-btn">Get Started</a>
+    </div>
+</header>
+<style>
+
+body{
+background-image: url(images/hero-bg.svg);
+background-size: cover;
+}
+  .secondary-menu {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .secondary-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .text-center{
+    text-align: center;
+}
+
+.section-title {
+  font-size: 35px;
+  padding: 37px;
+  font-weight: bold;
+  color: #cfccc2;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.section-title2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #cfccc2;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.info-heading {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #cfccc2;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.info-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.info-description {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 15px;
+  display: block;
+}
+
+ .info-wallet {
+    height: 33vh;
+    position: initial;
+    margin-bottom: 0px;
+}
+
+.info-wallet::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('images/hero-bg.svg');
+    background-size: cover;
+    background-position: bottom;
+    opacity: 1;
+    z-index: -1; /* Coloca o pseudo-elemento atrÃ¡s dos outros conteÃºdos */
+}
+
+.info-wallet content {
+    position: relative;
+    z-index: 1; /* Garante que o conteÃºdo esteja acima do pseudo-elemento */
+    color: white; /* Define a cor do texto */
+}
+
+.info-wallet img {
+    opacity: 1; /* Garante que as imagens dentro do contÃªiner tenham opacidade total */
+}
+
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-box {
+  width: calc(15% - 10px); /* 50% da largura da imagem com espaçamento */
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+}
+
+.image-text {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #525252;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.image-text p {
+  margin: 5px 0;
+}
+
+.closed-exchanges-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #cbcbcb;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container .icon {
+  margin-right: 20px;
+}
+
+.icon-container .text-container {
+  font-family: Arial, sans-serif;
+  color: #323232;
+  font-size: 12px;
+  font-family: "Titillium Web", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.plus-container {
+  display: flex;
+  align-items: center;
+}
+
+.plus-container .plus-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+        .container-work {
+            position: relative;
+            width: 85vw;
+            max-width: 800px;
+            margin: 0px auto;
+        }
+        .crypto-title {
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+        }
+        .crypto-section {
+            position: relative;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .crypto-subtitle {
+            color: #666;
+            margin-top: 20px;
+        }
+        .crypto-text {
+            color: #666;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .container-work2 {
+            position: relative;
+            width: 85vw;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        .crypto-box2 {
+            position: relative;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .crypto-title2 {
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+        }
+        .crypto-text2 {
+            color: #666;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+/* Media query para dispositivos mÃ³veis */
+@media only screen and (max-width: 768px) {
+
+.info-wallet {
+ padding: 0px;
+ height: 43vh;
+}
+
+.image-box {
+  width: calc(40% - 10px); /* 50% da largura da imagem com espaçamento */
+  margin-bottom: 15px;
+  align-content: center;
+}
+
+}
+
+</style>
+</head>
+<body>
+<div class="info-wallet">
+  <h2 class="section-title">How Secure Cash Works</h2>
+  <div class="wallet-info">
+    <p class="info-heading">Secure Cash is a 100% anonymous and decentralized cryptocurrency using CryptoNight Algorithm, it is important for you to know how it works</p>
+  </div>
+</div>
+<div class="container-work">
+        <div class="crypto-section">
+            <h1 class="crypto-title">Understanding the Functioning of Blockchain with CryptoNight Algorithm</h1>
+        </div>
+        <div class="crypto-section">
+            <h2 class="crypto-subtitle">Creation and Registration of Transactions</h2>
+            <p class="crypto-text">The first step lies in the creation of transactions, where users can send value units to other participants of the network. These transactions are registered with details such as sender, recipient, and value, forming the basic fabric of the system.</p>
+        </div>
+        <div class="crypto-section">
+            <h2 class="crypto-subtitle">Consolidation into Blocks</h2>
+            <p class="crypto-text">Transactions are then grouped into blocks, forming a chained structure. Each block has a maximum limit of transactions it can contain, ensuring network efficiency.</p>
+        </div>
+        <div class="crypto-section">
+            <h2 class="crypto-subtitle">Security through Hashing</h2>
+            <p class="crypto-text">Before being added to the chain, blocks are processed by a hash algorithm, such as CryptoNight. This algorithm generates a unique and cryptographically secure representation of the transactions contained in the block, ensuring its integrity and immutability.</p>
+        </div>
+        <div class="crypto-section">
+            <h2 class="crypto-subtitle">Mining and Consensus</h2>
+            <p class="crypto-text">Network miners compete to solve a complex mathematical problem involving the last block in the chain. The first miner to find the correct solution can add the next block to the chain, while other nodes verify and validate this solution, ensuring consensus on the network.</p>
+        </div>
+        <div class="crypto-section">
+            <h2 class="crypto-subtitle">Privacy and Anonymity</h2>
+            <p class="crypto-text">One of the striking features of the CryptoNight algorithm is its ability to preserve the privacy and anonymity of transactions. It does this through advanced techniques of address shuffling and digital signatures, ensuring that only the parties involved in a transaction can access its details.</p>
+        </div>
+        <div class="crypto-section">
+            <h2 class="crypto-subtitle">Conclusion and Security</h2>
+            <p class="crypto-text">The blockchain with CryptoNight algorithm offers a secure and decentralized structure for digital transactions. Its built-in immutability, distribution, and privacy make it an attractive choice for various use cases, from value transfers to smart contracts and beyond.</p>
+        </div>
+    </div>
+    <div class="container-work2">
+        <div class="crypto-box2">
+            <h1 class="crypto-title2">Explaining the Anonymity and Untraceability of Secure Cash (SCSX)</h1>
+            <p class="crypto-text2">Secure Cash (SCSX) stands out in the realm of cryptocurrencies for its robust approach to privacy and anonymity, achieved primarily through the utilization of the CryptoNight algorithm.</p>
+            <p class="crypto-text2">Here are key factors contributing to the anonymity and untraceability of SCSX:</p>
+            <ul class="crypto-text2">
+                <br>
+                <li>**Ring Signatures**: SCSX employs ring signatures to obfuscate the identity of the sender. When initiating a transaction, multiple decoy inputs are included alongside the actual sender's input, making it virtually impossible to determine the true source.</li>
+		<br>
+                <li>**RingCT (Ring Confidential Transactions)**: This feature further enhances privacy by concealing transaction amounts. With RingCT, the actual transaction amount is masked, ensuring that only the sender and receiver have knowledge of the transfer amount.</li>
+                <br>
+                <li>**Mixin**: The Mixin feature, also known as "transaction mixing," adds additional layers of anonymity to transactions. When a user initiates a transaction, they can specify a number of additional inputs, or mixins, from other unrelated transactions. These mixins obscure the true source of the transaction, making it more challenging for outside observers to trace.</li>
+                <br>
+                <li>**Decentralized Nature**: SCSX operates on a decentralized network, meaning there's no central authority or intermediary tracking transactions. This lack of centralization adds an extra layer of privacy and makes it challenging for any single entity to monitor or control transactions.</li>
+                <br>
+                <li>**Resistance to Analysis**: The CryptoNight algorithm, which forms the backbone of SCSX, is designed to resist analysis and thwart attempts at tracing transactions. Its complex cryptographic functions make it extremely difficult for outside parties to de-anonymize users or track their transactions.</li>
+            </ul>
+            <p class="crypto-text2">In summary, Secure Cash (SCSX) leverages a combination of advanced cryptographic techniques and decentralized architecture to ensure anonymity and untraceability for its users. This commitment to privacy makes it an attractive choice for individuals seeking financial transactions free from surveillance and monitoring.</p>
+        </div>
+    </div>
+<div class="closed-exchanges-container">
+  <div class="icon-container">
+    <div class="icon">
+ 
+    </div>
+   <div class="text-container">
+   </div>
+    <div class="plus-container">
+  
+    </div>
+</div></div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h4>Legal</h4>
+            <p>© Secure Cash Developer Team 2019-2024<br>Released under the MIT license</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

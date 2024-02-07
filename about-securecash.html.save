@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Cash (SCSX)</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Seu arquivo CSS -->
+</head>
+<body>
+<header>
+    <div class="container container-mobile">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/scashcoin/images/master/SCSX_LOGO_OFFICIAL_200x200.png" alt="Secure Cash Logo">
+            <h3>Secure Cash (SCSX)</h3>
+        </div>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>
+      <a href="#">Introduction</a>
+      <ul class="dropdown">
+        <li><a href="how-work.html">How its work</a></li>
+        <li><a href="about-securecash.html">About Secure Cash</a></li>
+        <li><a href="https://github.com/scashcoin/whitepaper/blob/main/whitepaper-scsx.pdf">White paper</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Resources</a>
+      <ul class="dropdown">
+        <li><a href="choosewallet.html">Wallets</a></li>
+        <li><a href="buysecurecash.html">Exchanges</a></li>
+        <li><a href="miningpools.html">Mining Pools</a></li>
+        <li><a href="webminer.html">Web Miner</a></li>
+        <li><a href="http://explorer.scsx.org">Explorer</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+      </ul>
+    </li>
+    <li><a href="community.html">Community</a></li>
+  </ul>
+</nav>
+        <div class="social-icons">
+            <a href="https://twitter.com/securecash_scsx"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968958.png" alt="x"></a>
+            <a href="https://t.me/scash_scsx"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"></a>
+            <a href="https://github.com/scashcoin"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+            <a href="https://discord.gg/jcFR7Yt"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord"></a>
+        </div>
+        <a href="getting-started.html" class="get-started-btn">Get Started</a>
+    </div>
+</header>
+<style>
+  .secondary-menu {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .secondary-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .text-center{
+    text-align: center;
+}
+
+.section-title {
+  font-size: 35px;
+  padding: 37px;
+  font-weight: bold;
+  color: #cfccc2;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.section-title2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #cfccc2;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.info-heading {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #604d0c;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.info-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.info-description {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 15px;
+  display: block;
+}
+
+ .info-wallet {
+    height: 30vh;
+    position: initial;
+    margin-bottom: 0px;
+}
+
+.info-wallet::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #13161f;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 1;
+    z-index: -1; /* Coloca o pseudo-elemento atrÃ¡s dos outros conteÃºdos */
+}
+
+.info-wallet content {
+    position: relative;
+    z-index: 1; /* Garante que o conteÃºdo esteja acima do pseudo-elemento */
+    color: white; /* Define a cor do texto */
+}
+
+.info-wallet img {
+    opacity: 1; /* Garante que as imagens dentro do contÃªiner tenham opacidade total */
+}
+
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-box {
+  width: calc(15% - 10px); /* 50% da largura da imagem com espaçamento */
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+}
+
+.image-text {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #525252;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.image-text p {
+  margin: 5px 0;
+}
+
+.container2 {
+            position: relative;
+            width: 90vw;
+            max-width: 900px;
+            margin: 50px auto;
+        }
+        .crypto-box {
+            position: relative;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .crypto-title {
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+        }
+        .crypto-text {
+            color: #666;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+.image-container2 {
+    width: auto; /* Largura desejada da imagem */
+    height: 200px; /* Altura desejada da imagem */
+    overflow: hidden; /* Para ocultar as partes da imagem fora do container */
+    position: relative; /* Para usar o posicionamento absoluto */
+}
+
+.image-container2 img {
+    position: absolute;
+    clip: rect(0, 900px, 200px, 0); /* Define a área a ser exibida (top, right, bottom, left) */
+    width: 100vw; /* Largura original da imagem */
+    height: 100vh; /* Altura original da imagem */
+}
+
+.container7 {
+            display: flex;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	    text-align: center;
+        }
+        .part1, .part2, .part3 {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-right: 2px solid #ccc;
+        }
+        .part3 {
+            border-right: none;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+/* Media query para dispositivos mÃ³veis */
+@media only screen and (max-width: 768px) {
+
+.info-wallet {
+ padding: 0px;
+ height: 43vh;
+}
+
+.image-box {
+  width: calc(40% - 10px); /* 50% da largura da imagem com espaçamento */
+  margin-bottom: 15px;
+  align-content: center;
+}
+
+   .crypto-title {
+     color: #333;
+     text-align: center;
+     margin-top: 0;
+     font-size: 19px;
+}
+
+.section-title {
+  font-size: 23px;
+  padding: 37px;
+  font-weight: bold;
+  color: #cfccc2;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+ .info-wallet {
+    height: 14vh;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.image-container2 img {
+    position: absolute;
+    clip: rect(0, 900px, 200px, 0); /* Define a área a ser exibida (top, right, bottom, left) */
+    width: 100vw; /* Largura original da imagem */
+    height: auto; /* Altura original da imagem */
+}
+
+.container2 {
+        .crypto-box {
+            position: relative;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+}
+
+}
+
+</style>
+</head>
+<body>
+<div class="info-wallet">
+  <h2 class="section-title">About Secure Cash</h2>
+  <div class="wallet-info">
+  </div>
+</div>
+    <div class="container2">
+        <div class="crypto-box">
+            <h1 class="crypto-title">Secure Cash (SCSX): Freedom and resistance against totalitarian governments, economic crisis and the future new world order</h1>
+		<br><div class="image-container2"> <img src="images/nwo.jpg"></></div><br>
+		<p class="info-heading">Secure Cash (SCSX) is your shield against the relentless grip of totalitarian regimes, poised to snatch your hard-earned money to fuel their oppressive agendas. Say no to the tyranny of compulsory taxation, where your funds vanish into the abyss of frivolous levies, such as carbon emissions fees and other political fallacies. With Secure Cash, reclaim your financial sovereignty and defy the chains of governmental overreach. Join the resistance, protect your wealth, and defy the encroachment of authoritarian rule.</p>
+		<br>
+		<br>
+            <p class="crypto-text">Secure Cash (SCSX) emerges as a beacon of hope in the tumultuous landscape of modern finance. Born from the fervent desire to combat totalitarian regimes and safeguard individual freedoms, SCSX represents the pinnacle of privacy-centric cryptocurrencies.</p>
+		<br>
+            <p class="crypto-text">At its core, SCSX is designed to be 100% anonymous, decentralized, and untraceable, providing users with a sanctuary for their financial transactions away from the prying eyes of oppressive governments and clandestine agendas. Its ultimate goal? To serve as a store of value in regions plagued by autocratic leaders who manipulate public resources for personal gain, disregarding the will and rights of their citizens.</p>
+		<br>
+            <p class="crypto-text">In countries where corruption runs rampant and citizens are burdened with exorbitant taxes and fees, Secure Cash (SCSX) offers a lifeline, shielding their wealth from the clutches of tyrants and securing it against the looming specter of a satanic or Luciferian new world order. By harnessing the power of blockchain technology and cryptographic innovation, SCSX empowers individuals to take control of their financial destinies and resist the encroachment of totalitarianism.</p>
+		<br>
+            <p class="crypto-text">In a world where freedom is under siege and the true enemies of society lurk in the shadows, Secure Cash (SCSX) stands as a bastion of financial sovereignty and resistance against the forces of oppression. Join the movement today and embrace a future where privacy, freedom, and individual empowerment reign supreme.</p>
+        </div>
+    </div>
+<div class="container7">
+        <div class="part1">
+            <h2>Simple Information</h2>
+            <p>Coin Name: Secure Cash</p>
+            <p>Symbol or Ticker: SCSX</p>
+            <p>Maximum Supply: 300,000</p>
+            <p>Transaction Fee: 0.00000100</p>
+            <p>Pre-mining: 15% (spent!)</p>
+        </div>
+        <div class="part2">
+            <h2>Technical Information</h2>
+            <p>Algorithm: CryptoNight</p>
+            <p>PoW algo: CryptoNight-Lite V7</p>
+            <p>Difficulty algorithm: Zawy V2</p>
+            <p>Difficulty target: 120 Seconds</p>
+            <p>Emission speed factor: 21</p>
+            <p>P2P Port: 31000</p>
+            <p>RPC Port: 31001</p>
+        </div>
+        <div class="part3">
+            <h2>Team Information</h2>
+            <p>1 Dev: A.L.X</p>
+            <p>Special thanks to</p>
+            <p>DH.</p>
+            <p>Fingeof.</p>
+            <p>Shaka.</p>
+            <p>Alef Sten</p>
+            <p>Flaja</p>
+        </div>
+    </div>
+<div class="closed-exchanges-container">
+  <div class="icon-container">
+    <div class="icon">
+ 
+    </div>
+   <div class="text-container">
+   </div>
+    <div class="plus-container">
+  
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h4>Legal</h4>
+            <p>© Secure Cash Developer Team 2019-2024<br>Released under the MIT license</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

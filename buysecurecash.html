@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Cash (SCSX)</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Seu arquivo CSS -->
+</head>
+<body>
+<header>
+    <div class="container container-mobile">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/scashcoin/images/master/SCSX_LOGO_OFFICIAL_200x200.png" alt="Secure Cash Logo">
+            <h3>Secure Cash (SCSX)</h3>
+        </div>
+<nav>
+  <ul>
+    <li><a href="getting-started.html">Get Started</a></li>
+    <li>
+      <a href="#">Introduction</a>
+      <ul class="dropdown">
+        <li><a href="how-work.html">How its work</a></li>
+        <li><a href="about-securecash.html">About Secure Cash</a></li>
+        <li><a href="https://github.com/scashcoin/whitepaper/blob/main/whitepaper-scsx.pdf">White paper</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Resources</a>
+      <ul class="dropdown">
+        <li><a href="choosewallet.html">Wallets</a></li>
+        <li><a href="#">Exchanges</a></li>
+        <li><a href="http://pool.scsx.org/">Mining Pool</a></li>
+        <li><a href="webminer.html">Web Miner</a></li>
+        <li><a href="http://explorer.scsx.org">Explorer</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+      </ul>
+    </li>
+    <li><a href="community.html">Community</a></li>
+  </ul>
+</nav>
+        <div class="social-icons">
+            <a href="https://twitter.com/securecash_scsx"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968958.png" alt="x"></a>
+            <a href="https://t.me/scash_scsx"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"></a>
+            <a href="https://github.com/scashcoin"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+            <a href="https://discord.gg/jcFR7Yt"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord"></a>
+        </div>
+        <a href="getting-started.html" class="get-started-btn">Get Started</a>
+    </div>
+</header>
+<style>
+  .secondary-menu {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .secondary-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .text-center{
+    text-align: center;
+}
+
+.section-title {
+  font-size: 35px;
+  padding: 65px;
+  font-weight: bold;
+  color: #cfccc2;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.section-title2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #cfccc2;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.info-heading {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #cfccc2;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.info-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.info-description {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 15px;
+  display: block;
+}
+
+ .info-wallet {
+    height: 55vh;
+    position: initial;
+    margin-bottom: 50px;
+}
+
+.info-wallet::after {
+    height: 55vh;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('images/hero-bg.svg');
+    background-size: cover;
+    background-position: cover;
+    opacity: 1;
+    z-index: -1; /* Coloca o pseudo-elemento atrÃ¡s dos outros conteÃºdos */
+}
+
+.info-wallet content {
+    position: relative;
+    z-index: 1; /* Garante que o conteÃºdo esteja acima do pseudo-elemento */
+    color: white; /* Define a cor do texto */
+}
+
+.info-wallet img {
+    opacity: 1; /* Garante que as imagens dentro do contÃªiner tenham opacidade total */
+}
+
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-box {
+  width: calc(15% - 10px); /* 50% da largura da imagem com espaçamento */
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+}
+
+.image-text {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #525252;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.image-text p {
+  margin: 5px 0;
+}
+
+.closed-exchanges-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #cbcbcb;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container .icon {
+  margin-right: 20px;
+}
+
+.icon-container .text-container {
+  font-family: Arial, sans-serif;
+  color: #323232;
+  font-size: 12px;
+  font-family: "Titillium Web", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.plus-container {
+  display: flex;
+  align-items: center;
+}
+
+.plus-container .plus-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.plus-container .text-container {
+  font-family: Arial, sans-serif;
+}
+
+.closed-exchanges-container .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.closed-exchanges-container .closed-exchanges-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.closed-exchanges-container .closed-exchanges-list li {
+  margin-bottom: 5px;
+}
+
+.closed-exchanges-container .text {
+  font-size: 18px;
+}
+
+.closed-exchanges-container .coming-soon {
+  font-style: italic;
+}
+
+/* Media query para dispositivos mÃ³veis */
+@media only screen and (max-width: 768px) {
+
+.info-wallet {
+ padding: 0px;
+}
+
+.image-box {
+  width: calc(40% - 10px); /* 50% da largura da imagem com espaçamento */
+  margin-bottom: 15px;
+  align-content: center;
+}
+
+}
+
+</style>
+</head>
+<body>
+<div class="info-wallet">
+  <h2 class="section-title">Buy Secure Cash</h2>
+  <div class="wallet-info">
+    <p class="info-heading">Buy some SCSX coins on exchanges, Hold and watch the magic happen:</p>
+  </div>
+</div>
+<div class="image-container">
+  <div class="image-box">
+    <a href="https://www.finexbox.com/market/pair/SCSX-BTC">
+<img src="https://scsx.org/images/finexbox.png" alt="finexbox">
+    </a>
+    <div class="image-text">
+      <p>Medium Volume Exchange</p>
+      <p>Only BTC Pair</p>
+      <p>CEX</p>
+    </div>
+  </div>
+  <div class="image-box">
+    <a href="https://bololex.com/trading/?symbol=SCSX-USDT">
+      <img src="https://scsx.org/images/bololex.png" at="bololex">
+    </a>
+    <div class="image-text">
+      <p>Medium Volume Exchange</p>
+      <p>USDT - BTC - ETH Pair</p>
+      <p>CEX</p>
+    </div>
+  </div>
+</div>
+
+<div class="closed-exchanges-container">
+  <div class="icon-container">
+    <div class="icon">
+      <img src="https://scsx.org/images/close-50.png" width="39" height="39" alt="Closed Exchanges">
+    </div>
+    <div class="text-container">
+      <h2 class="title">Closed Exchanges</h2>
+      <ul class="closed-exchanges-list">
+      <li>Nanu.exchange</li>
+      <li>Letzdocoins</li>
+      <li>TrocandoCoins</li>
+      <li>Gokuex</li>
+      <li>Unnamed.exchange</li>
+      </ul>
+    </div>
+  </div>
+  <div class="plus-container">
+    <div class="plus-icon">+</div>
+    <div class="text-container">
+      <p class="text">More Exchanges?</p>
+      <p class="coming-soon">Coming soon.</p>
+    </div>
+  </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h4>Legal</h4>
+            <p>© Secure Cash Developer Team 2019-2024<br>Released under the MIT license</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

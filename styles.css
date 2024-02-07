@@ -1,0 +1,470 @@
+/* Reset CSS básico */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos compartilhados */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 70px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  padding: 10px 0;
+  border: 1px solid #ccc;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li a {
+  display: flex;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fffffff5;
+}
+
+nav ul li ul li {
+  display: block;
+}
+
+nav ul li ul li a {
+  padding: 8px 20px;
+  color: #333;
+  font-size: 12px;
+}
+
+nav ul li ul li a:hover {
+  background-color: #ddd;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.get-started-btn {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Botões */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.button {
+    width: calc(33.33% - 55px);
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #1a237e;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #111754;
+}
+
+.button:nth-child(1) {
+    background-color: #1a237e;
+    color: #fff;
+}
+
+.button:nth-child(2), .button:nth-child(3) {
+    color: #111754;
+}
+
+.button:hover {
+    background-color: #777;
+}
+
+/* Texto e botões */
+.button-text {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: #1C1F30;
+    font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.chart-text {
+    text-align: center;
+    margin-top: 100px; /* Posicionamento a 100px acima dos botÃµes */
+    font-size: 27px;
+    font-weight: bold;
+    padding: 0 20px; /* Adicionando espaÃ§amento entre os cantos */
+    box-sizing: border-box; /* Garantindo que o padding nÃ£o aumente o tamanho total do container */
+    color: #1C1F30;
+    font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.core-text {
+    text-align: center;
+    margin-top: 1px; /* Posicionamento a 100px acima dos botÃµes */
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 20px; /* Adicionando espaÃ§amento entre os cantos */
+    box-sizing: border-box; /* Garantindo que o padding nÃ£o aumente o tamanho total do container */
+    color: #f0f0f0;
+    font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.topimage-text {
+    text-align: center;
+    margin-top: 1px; /* Posicionamento a 100px acima dos botÃµes */
+    font-size: 30px;
+    font-weight: bold;
+    padding: 235px 20px; /* Adicionando espaÃ§amento entre os cantos */
+    box-sizing: border-box; /* Garantindo que o padding nÃ£o aumente o tamanho total do container */
+    color: #dce5e5;
+    font-family: 'Roboto', sans-serif;;
+}
+
+/* Header */
+.header-container, .header-container-mobile {
+    padding: 90px;
+    background: linear-gradient(to right, #0b1020 -350%, #ffffff 79%);
+    height: 77vh;
+}
+
+/* Main container */
+.main-container {
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    background-color: #0b1020;
+    background-size: initial;
+    background-position: center;
+}
+
+.container-topimage {
+    height: 100vh;
+    position: relative;
+    background-color: #000000bd;
+}
+
+.container-topimage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('images/nwo.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1; /* Coloca o pseudo-elemento atrás dos outros conteúdos */
+}
+
+.container-content {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo esteja acima do pseudo-elemento */
+    color: white; /* Define a cor do texto */
+}
+
+.container-content img {
+    opacity: 1; /* Garante que as imagens dentro do contêiner tenham opacidade total */
+}
+
+
+/* Core info */
+.core-info, .core-info-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+.feature {
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.feature h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature p {
+    color: #666;
+}
+
+/* Imagens */
+.chart-images {
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0.9;
+	margin-bottom: 107px;
+	}
+
+    .image-item {
+        width: 250px;
+        height: 65px;
+        margin: 40px;
+    }
+
+    .image-item img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .image-item img:hover {
+        transform: scale(1.1);
+    }
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #aaa;
+}
+
+.footer-info p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.footer-info h4 {
+    margin-bottom: 10px;
+}
+
+
+/* Media query para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+    .container, .container-mobile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .social-icons {
+        order: 1;
+        margin-top: 10px;
+    }
+
+    .get-started-btn {
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .button-text {
+        margin-top: 0px;
+        font-size: 17px;
+        padding: 0px;
+    }
+
+    .chart-text {
+        margin-top: 50px;
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    .button {
+        width: 200px;
+    }
+
+    .espaço-mobile {
+        margin-bottom: 77px;
+    }
+
+    .feature {
+        width: calc(50% - 20px);
+    }
+
+    .main-container {
+        background-color: #0b1020;
+        overflow: auto; /* Adiciona overflow para permitir a rolagem quando o conteúdo for maior que a tela */
+    }
+
+    .feature-mobile {
+        width: 95vw;
+    }
+
+    .header-container-mobile {
+        height: auto;
+    }
+
+.container-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+}
+
+    .image-item-mobile {
+        width: 200px;
+        height: 55px;
+        margin: 20px;
+    }
+
+    .topimage-text {
+        font-size: 21px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fffffff5;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 8px 20px;
+    color: #333;
+}
+
+nav ul li ul li a:hover {
+    background-color: #ddd;
+}
+
+}
+
+ 

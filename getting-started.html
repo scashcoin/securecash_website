@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Cash (SCSX)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container container-mobile">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/scashcoin/images/master/SCSX_LOGO_OFFICIAL_200x200.png" alt="Secure Cash Logo">
+            <h3>Secure Cash (SCSX)</h3>
+        </div>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>
+      <a href="#">Introduction</a>
+      <ul class="dropdown">
+        <li><a href="how-work.html">How its work</a></li>
+        <li><a href="about-securecash.html">About Secure Cash</a></li>
+        <li><a href="whitepaper.html">White paper</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Resources</a>
+      <ul class="dropdown">
+        <li><a href="choosewallet.html">Wallets</a></li>
+        <li><a href="buysecurecash.html">Exchanges</a></li>
+        <li><a href="miningpools.html">Mining Pools</a></li>
+        <li><a href="webminer.html">Web Miner</a></li>
+        <li><a href="http://explorer.scsx.org">Explorer</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+      </ul>
+    </li>
+    <li><a href="community.html">Community</a></li>
+  </ul>
+</nav>
+        <div class="social-icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="Twitter"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord"></a>
+        </div>
+        <a href="#" class="get-started-btn">Get Started</a>
+    </div>
+</header>
+
+<div class="info-wallet">
+  <h2 class="section-title">Getting Started With Secure Cash</h2>
+  <div class="wallet-info">
+    <p class="info-heading"></p>
+  </div>
+</div>
+<style>
+body {
+    background-image: url(images/hero-bg.svg);
+    background-size: cover;
+    color: #d1cec5;
+}
+
+ .info-wallet {
+    height: 29vh;
+    position: initial;
+    margin-bottom: 1px;
+}
+
+.info-wallet::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('images/hero-bg.svg');
+    background-size: cover;
+    background-position: cover;
+    opacity: 1;
+    z-index: -1; /* Coloca o pseudo-elemento atrÃ¡s dos outros conteÃºdos */
+}
+
+.info-wallet content {
+    position: relative;
+    z-index: 1; /* Garante que o conteÃºdo esteja acima do pseudo-elemento */
+    color: white; /* Define a cor do texto */
+}
+
+.info-wallet img {
+    opacity: 1; /* Garante que as imagens dentro do contÃªiner tenham opacidade total */
+}
+
+.getting-started-guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.step img {
+  width: 50px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-right: 10px;
+}
+
+.dashed-line {
+  border-left: 1px dashed #fffffffa;
+  height: 130px; /* Ajuste conforme necessário */
+  margin-left: 0px; /* Ajuste conforme necessário */
+}
+
+.dashed-line2 {
+  border-bottom: 1px dashed #fffffffa; /* Cor e estilo da linha tracejada */
+  width: 20%; /* Largura da linha */
+  margin: 0px 0; /* Margem superior e inferior para espaçamento */
+}
+
+.rectangle {
+  width: auto; /* Largura do retângulo */
+  height: 30px; /* Altura do retângulo */
+  background-color: #3498db; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  text-align: center; /* Alinhamento do texto */
+  line-height: 30px; /* Altura da linha para centralizar verticalmente o texto */
+  font-size: 15px; /* Tamanho da fonte */
+  padding: 0px 15px;
+}
+.text-get {
+  margin: 0px 399px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #c3c3c3;
+}
+
+.section-title {
+  font-size: 35px;
+  padding: 65px;
+  font-weight: bold;
+  color: #cfccc2;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.section-title2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #cfccc2;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+.info-heading {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #cfccc2;
+  text-align: center;
+  font-family: "Titillium Web", Arial, sans-serif;
+}
+
+
+/* Media query para dispositivos mĆ³veis */
+@media only screen and (max-width: 768px) {
+
+ .text-get {
+   margin: 0px 10px;
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 1.7;
+   color: #cfccc2;
+  }
+
+ .section-title {
+  font-size: 27px;
+  padding: 65px;
+  font-weight: bold;
+  color: #cfccc2;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Titillium Web", Arial, sans-serif;
+  }
+
+}
+
+</style>
+<div class="steps-container">
+  <div class="step">
+
+    <h1 style="color: #6090ff;">Step 1: Inform yourself</h1><br>
+    <p class="text-get"> Secure Cash has a totally different mission that you may have never seen before, and before you start using it, there are a few things you need to know to use it safely and avoid common pitfalls.</p><br>
+     <a href="about-securecash.html"><div class="rectangle">Read more!</div></a>
+  </div>
+  <div class="dashed-line"></div>
+  <div class="dashed-line2"></div>
+<br>
+  <div class="step">
+    <h1 style="color: #6090ff;">Step 2: Choose your wallet</h1><br>
+<p class="text-get">First of all, you need to choose a wallet that best suits you and is compatible with the device you are using. For example, you can install an application on your mobile device for daily use or you can have a wallet just for online payments on your computer. In any case, choosing a wallet is easy and can be done in minutes.</p><br>
+   <a href="choosewallet.html"> <div class="rectangle">Choose Now!</div></a>
+  </div>
+  <div class="dashed-line"></div>
+  <div class="dashed-line2"></div><br>
+  
+  <div class="step">
+    <h1 style="color: #6090ff;">Step 3: Get Secure Cash</h1><br>
+<p class="text-get"> Buy Secure Cash easily on some exchanges that do not require KYC, just create your account with a simple email and that's it, and of course choose the exchange that suits you best</p><br>
+    <a href="buysecurecash.html"><div class="rectangle">Buy SCSX</div></a>
+  </div>
+  <div class="dashed-line"></div>
+  <div class="dashed-line2"></div><br>
+  
+  <div class="step">
+    <h1 style="color: #6090ff;">Ready: Your money protected</h1><br>
+<p class="text-get">Now that you have Secure Cash in your wallet, your money is protected from totalitarian governments that want to charge high taxes and fees, all to promote agendas that aim to harm their own people. </p><br>
+    <a href="community.html"> <div class="rectangle">Participate in the Community</div></a>
+  </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h4>Legal</h4>
+            <p>© Secure Cash Developer Team 2019-2024<br>Released under the MIT license</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
